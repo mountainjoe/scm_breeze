@@ -61,7 +61,10 @@ _exp="exec_git_expand_args"
 __git_alias "$git_checkout_alias"    "$_exp git" "checkout"
 __git_alias "$git_commit_alias"      "$_exp git" "commit"
 __git_alias "$git_reset_alias"       "$_exp git" "reset"
-__git_alias "$git_reset_del_alias"   "$_exp git" "reset" "--"
+# This command results in a shortcut "grs-" which prevents me
+# from logging in under Ubuntu 10.04LTS. Removing this command should
+# let me work properly. 
+#__git_alias "$git_reset_del_alias"   "$_exp git" "reset" "--"
 __git_alias "$git_reset_hard_alias"  "$_exp git" "reset" "--hard"
 __git_alias "$git_rm_alias"          "$_exp git" "rm"
 __git_alias "$git_blame_alias"       "$_exp git" "blame"
